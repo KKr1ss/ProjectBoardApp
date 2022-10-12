@@ -4,15 +4,87 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#ffffcc">
 
-    <TextView
+    <Button
+        android:id="@+id/bttnPlay"
+        android:layout_width="221dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="304dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="37dp"
+        android:text="Let's play!"
+        android:textColor="#D30909"
+        android:radius="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/bttnPastGames"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.783" />
+
+    <Button
+        android:id="@+id/bttnMyProfile"
+        android:layout_width="134dp"
+        android:layout_height="85dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="100dp"
+        android:text="My Profile"
+        android:textColor="#D30909"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/bttnPastGames"
+        android:layout_width="134dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="100dp"
+        android:text="Game history"
+        android:textColor="#D30909"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/plnTxtWelcomeMain"
+        android:layout_width="315dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="138dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Welcome to PolyBoard!"
+        android:textColor="#D30909"
+        android:textAlignment="center"
+        android:textSize="80px"
+        android:fontWeight="400"
+        app:layout_constraintBottom_toTopOf="@+id/bttnPlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAutofill="no"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/plnTxtHaveFun"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="101dp"
+        android:clickable="false"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Have fun!"
+        android:textAlignment="center"
+        android:textColor="#D30909"
+        android:textSize="50px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plnTxtWelcomeMain"
+        tools:ignore="TouchTargetSizeCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
