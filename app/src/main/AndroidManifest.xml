@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectBoardApp">
         <activity
-            android:name=".PresetsActivity"
+            android:name=".saves"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
